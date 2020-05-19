@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainWindow" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainWndwController">
+   <children>
+      <Label layoutX="30.0" layoutY="24.0" prefHeight="27.0" prefWidth="525.0" text="                                  IN MEMORY POS SYSTEM">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="btnManageCustomers" layoutX="94.0" layoutY="118.0" mnemonicParsing="false" onAction="#mangeCustomers_OnAction" text="Manage Customers" />
+      <Button fx:id="btnManageItems" layoutX="223.0" layoutY="118.0" mnemonicParsing="false" onAction="#mangeItems_OnAction" text="Manage Items" />
+      <Button fx:id="btnPlaceOrders" layoutX="334.0" layoutY="118.0" mnemonicParsing="false" onAction="#placeOrders_OnAction" text="Place Orders" />
+      <Button fx:id="btnSearchOrders" layoutX="430.0" layoutY="118.0" mnemonicParsing="false" onAction="#Searchorders_OnAction" text="Search Orders" />
+   </children>
+</AnchorPane>

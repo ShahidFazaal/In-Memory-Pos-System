@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Customers" prefHeight="423.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="7.0" prefHeight="190.0" prefWidth="450.0" style="-fx-background-color: #737373;">
+         <children>
+            <Button fx:id="btnHome" layoutX="343.0" layoutY="157.0" mnemonicParsing="false" onAction="#homeOnAction" prefHeight="13.0" prefWidth="57.0" text="Home">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="311.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/2513403.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnAddCustomers" layoutX="341.0" layoutY="38.0" mnemonicParsing="false" onAction="#btn_AddNewCustomers" text="New Customer">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <TextField fx:id="txt_CustomerId" editable="false" layoutX="154.0" layoutY="44.0" promptText="Customer ID" />
+      <TextField fx:id="txt_CustomerName" layoutX="154.0" layoutY="87.0" promptText="Customer Name" />
+      <TextField fx:id="txt_CustomerAddress" layoutX="154.0" layoutY="127.0" promptText="Customer Address" />
+      <Button fx:id="btnSave" layoutX="355.0" layoutY="86.0" mnemonicParsing="false" onAction="#btn_SaveCustomers" prefHeight="25.0" prefWidth="71.0" text="Save">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="355.0" layoutY="126.0" mnemonicParsing="false" onAction="#btn_DeleteCustomers" prefHeight="25.0" prefWidth="71.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="tbl_Customers" layoutX="13.0" layoutY="203.0" prefHeight="199.0" prefWidth="450.0">
+        <columns>
+          <TableColumn prefWidth="126.0" text="ID" />
+          <TableColumn prefWidth="157.0" text="Name" />
+            <TableColumn prefWidth="150.0" text="Address" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="31.0" fitWidth="24.0" layoutX="326.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/add.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="324.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/2499305.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="127.0" fitWidth="125.0" layoutX="17.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resource/customer-service.png" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

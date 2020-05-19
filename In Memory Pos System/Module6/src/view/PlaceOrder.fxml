@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="OrderDetails" prefHeight="495.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PlaceOrderController">
+   <children>
+      <Label layoutX="14.0" layoutY="19.0" text="Order Id">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="60.0" text="Customer ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="20.0" text="Order Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="61.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="98.0" text="Item Code">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="143.0" text="Quantity on hand">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="177.0" text="unit Price">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="445.0" layoutY="99.0" text="Description">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="143.0" text="QTY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtOrderid" editable="false" layoutX="135.0" layoutY="17.0" />
+      <TextField fx:id="txtOrderDate" editable="false" layoutX="537.0" layoutY="17.0" />
+      <TextField fx:id="txtCName" editable="false" layoutX="537.0" layoutY="58.0" />
+      <TextField fx:id="txtDescription" layoutX="537.0" layoutY="96.0" />
+      <TextField fx:id="txtQuantity" layoutX="537.0" layoutY="140.0" />
+      <TextField fx:id="txtUnitPrice" layoutX="289.0" layoutY="205.0" />
+      <TextField fx:id="txtQuantityOnhand" layoutX="135.0" layoutY="141.0" />
+      <ComboBox fx:id="cmbbxCustomerId" layoutX="134.0" layoutY="58.0" prefWidth="150.0" />
+      <ComboBox fx:id="cmbbxItemId" layoutX="134.0" layoutY="96.0" prefWidth="150.0" />
+      <Button fx:id="btnAddQuantity" layoutX="583.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnAddQuantity" text="ADD" />
+      <Button fx:id="btnPlaceOrder" layoutX="605.0" layoutY="456.0" mnemonicParsing="false" onAction="#btnPlaceOrder" text="Place Order" />
+      <TextField fx:id="txtTotal" layoutX="313.0" layoutY="455.0" />
+      <Label layoutX="182.0" layoutY="456.0" text="Net Total Rs. :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblOrderDetails" layoutX="9.0" layoutY="242.0" prefHeight="200.0" prefWidth="686.0">
+        <columns>
+          <TableColumn prefWidth="94.0" text="Item Code" />
+          <TableColumn prefWidth="192.0" text="Description" />
+            <TableColumn prefWidth="97.0" text="QTY" />
+            <TableColumn prefWidth="153.0" text="Unit Price Rs:" />
+            <TableColumn prefWidth="149.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnHome" layoutX="29.0" layoutY="193.0" mnemonicParsing="false" onAction="#btnHome_OnAction" text="Home" />
+   </children>
+</AnchorPane>
